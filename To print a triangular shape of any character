@@ -1,0 +1,6 @@
+# To print a triangular shape of any character
+n = input("Please, Enter a character to get triangular shape of that character :")
+n1 =  int(input ("Enter the number of you want in the shape :"))
+for i in range(1,n1+1):
+    n2=n*i
+    print(n2)
