@@ -1,0 +1,14 @@
+# To distribute the grade according to mark
+a = int(input("Enter the mark you got : "))
+if a >= 90:
+    print("Congretulation! you got A grade")
+elif a >= 80:
+    print("Congretulation! you got B grade")   
+elif a >= 70:
+    print("Congretulation! you got c grade")
+elif a >= 60:
+    print("Congretulation! you got D grade")  
+elif a >= 50:
+    print("Congretulation! you got E grade")
+else: 
+    print("you are fail.\n Better luck for next time")
