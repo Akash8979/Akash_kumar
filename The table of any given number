@@ -1,0 +1,9 @@
+# The table of any given number
+n = int(input("Enter a number to get table of the number :"))  
+if n == 0:
+    print("You entered zero and does not has table.")
+else:
+    print("The table the given number",n,"is here :")
+    for i in range(1,11):
+        n1 = n*i
+        print(n1)       
