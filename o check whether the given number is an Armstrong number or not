@@ -1,0 +1,13 @@
+# To check whether the given number is an Armstrong number or not
+a = int(input("Enter a number:"))
+n = len(str(a)) # This is the order of the armstrong number
+total = 0
+m = a
+while m > 0:
+    b = m % 10
+    total = total + (b**n)
+    m = m //10
+if total == a:
+    print("The number is a armstrong number.")
+else:
+    print("The is not a armstrong number.")
