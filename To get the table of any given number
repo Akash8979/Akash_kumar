@@ -1,4 +1,4 @@
-# The table of any given number
+# To get the table of any given number
 n = int(input("Enter a number to get table of the number :"))  
 if n == 0:
     print("You entered zero and does not has table.")
