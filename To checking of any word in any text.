@@ -1,4 +1,4 @@
-# To check the presence of any word in any text.
+# To checking of any word in any text.
 print("To check the presence of any word in any text. please,first pest your text and then write the word to check presence")
 a = str(input("please,pest down your text.:"))
 b = str(input("Write the word to check presence in the text. :"))
