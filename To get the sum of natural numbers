@@ -1,0 +1,10 @@
+# To get sum of natural numbers
+n = int(input("Enter a number :"))
+if  n <= 0:
+    print("Please enter a number more than zero.")
+else:
+    gh = 0
+    while (n > 0):
+        gh += n
+        n -= 1
+    print("The sum of the natural numbers is",gh)
