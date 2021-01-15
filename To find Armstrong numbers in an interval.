@@ -1,0 +1,19 @@
+# To find Armstrong numbers in an interval.
+# Please type lower number first.
+a = int(input("Enter the lower number :" ))
+b = int(input("Enter the upper number :"))
+if a <= b and a == b:
+    print("Please enter a valid number.")
+elif b == 0:
+    print("Please enter a valid number.")
+else:
+    for num in range(a,b+1,1):
+        order = len(str(num))
+        sum = 0
+        temp = num
+        while temp > 0:
+            digit = temp % 10
+            sum += digit**order    
+            temp = temp//10        
+        if num == sum :       
+            print("This number is an Armstrong number in the given interval numbers :",num) 
