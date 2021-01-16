@@ -1,0 +1,14 @@
+# A micro calculator for two numbers.
+a = int(input("Enter first number :"))
+b = int(input("Enter second number :"))
+c = str(input("Please select the operator you want to perform on the numbers[+,/,*,-] :")) 
+if a ==0 and b ==0:
+    print("The numbers should not be zero.")
+elif c == "+":
+    print(" The sum of the numbers is :", a + b )         
+elif c == "-":
+    print(" The sum of the numbers is :", a - b )    
+elif c == "*":
+    print(" The sum of the numbers is :", a * b )
+else:
+    print(" The sum of the numbers is :", a / b )
