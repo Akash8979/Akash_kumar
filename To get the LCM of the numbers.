@@ -1,0 +1,16 @@
+# To get the LCM of the numbers.
+a = int(input("Enter a number -"))
+b = int(input("Enter a number -"))
+c = int(input("Enter a number -"))
+if a > b and a > c:
+    greater = a
+elif b > a and b > c:
+    greater = b
+else:
+    greater = c    
+while(True):
+    if((greater % a == 0) and (greater % b == 0) and (greater % c) == 0): 
+        m = greater
+        break
+    greater += 1
+print("The lcm of the numbers -",m)
