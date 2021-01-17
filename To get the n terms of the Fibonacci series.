@@ -1,0 +1,12 @@
+# To get the n terms of the Fibonacci series.
+def ghanta(n):   
+    if n <= 1 :
+        return n       
+    else: 
+        return(ghanta(n-1) + ghanta(n-2))
+n = int(input("enter a natural number -"))
+if n <= 0:
+    print("Please a enter a natural number.")
+else:    
+    for i in range(n):  
+       print(ghanta(i))
