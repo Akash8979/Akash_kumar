@@ -1,0 +1,14 @@
+# Program to remove all punctuations and sort alphabetically the words from a string provided by the user.
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+a_string = str(input("Please,past your text -"))
+new_string=""
+for char in a_string:
+     if char not in punctuations:
+        new_string = new_string + char
+print(new_string)
+my_str = new_string
+b = my_str.lower()
+m = list(b.split())
+m.sort()
+for word in m: 
+    print(word)
