@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+
+{% block body %}
+<div class="container">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/phone.jpg" width="800" height="350" style="margin:0px 0px 0px 150px; alt=" error">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <h1 style="text-align:center; color:green; font-size:300%; font-family:verdana;"> Contact us </h1>
+    <p style="text-align:center; color:green; font-size:150%; font-family:courier;"> for any quary please contact us
+    </p>
+
+    <form action="/contact" method="post" style="margin:0px 10px 0px 350px;" autocomplete="on">
+      {% csrf_token %}
+      <fieldset>
+        <legend>customer feedback: </legend>
+        <lebel for="name">name</lebel><br>
+        <input type="text" id="name" name="name"><br>
+        <br>
+        <lebel for="email">Email</lebel><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <lebel for="lname">Male</lebel>
+        <input type="radio" id="male" name="gender" value="male">
+        <lebel for="lname">Female</lebel>
+        <input type="radio" id="female" name="gender" value="female">
+        <lebel for="lname">Other</lebel>
+        <input type="radio" id="other" name="gender" value="other"><br>
+        <br>
+
+        <hr>
+        <button type="submit">Submit</button>
+
+      </fieldset>
+
+    </form>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+</body>
+{% endblock body %}
